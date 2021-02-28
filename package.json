@@ -8,9 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "codedoc": "start codedoc",
-    "github": "start github",
-    "snapshot": "start snapshot"
+    "codedoc": "start .\\scripts\\codedoc",
+    "github": "start .\\scripts\\github",
+    "snapshot": "start .\\scripts\\snapshot"
   },
   "private": true,
   "dependencies": {
