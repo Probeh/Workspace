@@ -1,0 +1,21 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "es2020",
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "@probeh/ngx-logging": ["dist/logging/logging", "dist/logging"],
+      "@probeh/ngx-network": ["dist/network/network", "dist/network"],
+      "@probeh/ngx-storage": ["dist/storage/storage", "dist/storage"]
+    }
+  }
+}
