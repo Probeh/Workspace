@@ -3,19 +3,29 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "moduleResolution": "node",
+    "alwaysStrict": false,
+    "strictFunctionTypes": false,
     "importHelpers": true,
+    "inlineSources": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strict": false,
     "target": "es2015",
     "module": "es2020",
     "lib": ["es2018", "dom"],
     "paths": {
-      "@probeh/ngx-logging": ["dist/logging/logging", "dist/logging"],
+      "@probeh/ngx-logger": ["dist/logging/logging", "dist/logging"],
       "@probeh/ngx-network": ["dist/network/network", "dist/network"],
-      "@probeh/ngx-storage": ["dist/storage/storage", "dist/storage"]
+      "@probeh/ngx-storage": ["dist/storage/storage", "dist/storage"],
+      "@client/*": ["src/app/*"],
     }
+  },
+  "angularCompilerOptions": {
+    "enableIvy": false
   }
 }

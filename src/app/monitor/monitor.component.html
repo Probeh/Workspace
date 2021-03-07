@@ -1,0 +1,33 @@
+<div class="monitor-container">
+  <div
+    class="monitor-sidenav {{
+      this.sidenav_primary_show ? 'expanded' : 'collapse'
+    }}"
+  >
+    <button
+      class="btn btn-outline-info"
+      (click)="this.toggleSidenav('primary')"
+    >
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+  <div class="monitor-content">
+    <div class="monitor-header"></div>
+    <div class="monitor-body" #template monitorEvents>
+      <ng-content></ng-content>
+    </div>
+    <div class="monitor-footer"></div>
+  </div>
+  <div
+    class="monitor-sidenav {{
+      this.sidenav_secondary_show ? 'expanded' : 'collapse'
+    }}"
+  >
+    <button
+      class="btn btn-outline-info"
+      (click)="this.toggleSidenav('secondary')"
+    >
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+</div>
